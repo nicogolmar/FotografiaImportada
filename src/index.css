@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-no-focus:focus {
+    outline: none;
+  }
+
+  .textoRegreso{
+    cursor: pointer;
+}
