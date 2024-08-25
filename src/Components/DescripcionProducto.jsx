@@ -21,7 +21,7 @@ function DescripcionProducto() {
       };
   
       const handleDirection = () => {
-        navigate("/home");
+        navigate("/");
       };
 
   return (
@@ -40,7 +40,7 @@ function DescripcionProducto() {
           </NavbarBrand>
           <NavbarContent className="hidden sm:flex gap-4" justify="center">
             <NavbarItem>
-              <Link to="/home" color="foreground"  className="text-gray-300 hover:text-pink-400 transition-colors">
+              <Link to="/" color="foreground"  className="text-gray-300 hover:text-pink-400 transition-colors">
                 Inicio
               </Link>
             </NavbarItem>

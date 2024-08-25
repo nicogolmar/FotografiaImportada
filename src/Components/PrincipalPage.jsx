@@ -49,7 +49,7 @@ function PrincipalPage({pantallaEnviada}) {
         if(idProducto && idProducto>0){
             console.log("entrando" + idProducto)
             setPantalla(1);
-            navigate(`/home/producto/${idProducto}`)
+            navigate(`/descripcion/producto/${idProducto}`)
 
     }
       };
