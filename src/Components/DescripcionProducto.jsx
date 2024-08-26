@@ -13,7 +13,7 @@ function DescripcionProducto() {
         title: "Album",
         price: 129.99,
         description: "Album Fotografico 50 hojas.",
-        image: "/src/Images/Album.jpg?height=150&width=200",
+        image: "https://github.com/nicogolmar/FotografiaImportada/blob/main/src/Images/Album.jpg?raw=true?height=150&width=200",
         Colores: "Rojo",
         dimensions: "4000x3000 px",
         Material: "Cuerina",
@@ -65,7 +65,7 @@ function DescripcionProducto() {
     <Image
         src={product.image}
         alt={product.title}
-        style={{ width: '550px', height: '520px' }}
+        style={{ width: '25rem', height: '25rem' }}
         className="object-cover rounded-lg border border-pink-500/30"
     />
 </div>

@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 function PrincipalPage({pantallaEnviada}) {
     const [photos, setPhotos] = useState([
-        { id: 1, title: "Album", price: 29.99, image: "src/Images/Album.jpg?height=150&width=200" },
+        { id: 1, title: "Album", price: 29.99, image: "https://github.com/nicogolmar/FotografiaImportada/blob/main/src/Images/Album.jpg?raw=true?height=150&width=200" },
         { id: 2, title: "Cyberpunk Alley", price: 34.99, image: "/placeholder.svg?height=200&width=300" },
         { id: 3, title: "Holographic Dreams", price: 39.99, image: "/placeholder.svg?height=200&width=300" },
         { id: 4, title: "Digital Sunset", price: 32.99, image: "/placeholder.svg?height=200&width=300" },
@@ -149,7 +149,7 @@ function PrincipalPage({pantallaEnviada}) {
               shadow="lg" 
               key={photo.id} 
               isPressable 
-              
+              onClick={() => handlePhotoClick(photo.id)}
               className="bg-gray-800/50 backdrop-blur-lg border border-pink-500/30 hover:border-pink-500/70 transition-all duration-300 transform hover:-translate-y-1"
             >
                 
@@ -168,11 +168,7 @@ function PrincipalPage({pantallaEnviada}) {
           <b className="text-pink-400">{photo.title}</b>
           <p className="text-gray-300">${photo.price.toFixed(2)}</p>
         </div>
-        <Link to={`/home/producto/${photo.id}`}>
-        <Button className="ml-auto w-full bg-pink-500 text-white hover:bg-pink-600 transition-color" onClick={() => handlePhotoClick(photo.id)}>
-          Ver
-        </Button>
-        </Link>
+
         </CardFooter>
              
             </Card>
